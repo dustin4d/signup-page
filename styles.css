@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.leftside {
+    background-image: url(./wolfgang-hasselmann-DVrWox7H2gk-unsplash.jpg);
+    width: 65vw;
+}

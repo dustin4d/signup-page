@@ -30,6 +30,7 @@ body{
     width: 80vw;
     max-width: 850px;
     padding: 50px 0;
+    padding-right: 35px;
     position: absolute;
 
     background-color: var(--background);

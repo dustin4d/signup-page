@@ -1,11 +1,67 @@
+@font-face {
+    font-family: cursive-pixel;
+    src: url(./primusscript.ttf);
+}
+
+@font-face {
+    font-family: levi-windows;
+    src: url(./levi-windows.ttf);
+}
+
+:root{
+    /* Custom variables */
+    --background: #663a3b;
+    --foreground: #de8c62;
+    --highlight: #cb4953;
+    --white: #e7d8b6;
+    --red: #cb494e;
+}
+
+body{
+    /* Make the background flush with screen edge */
+    margin: 0;
+    background-color: var(--white);
+}
+
 .wrapper {
     display: flex;
 
-    height: 100vh;
     width: 100vw;
+    padding: 50px 0;
+    position: absolute;
+    top: 25%;
+
+    background-color: var(--background);
 }
 
 .leftside {
-    background-image: url(./wolfgang-hasselmann-DVrWox7H2gk-unsplash.jpg);
+    display: flex;
+    justify-content: flex-end; 
     width: 65vw;
+
+    background-color: var(--background);
+}
+
+.leftside img {
+    /* Set literal dimensions so it will never smooth the edges */
+    width: 290px;
+    height: 390px;
+
+    margin-right: 100px;
+}
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 60vw;
+
+    background-color: var(--background);
+    font-family: cursive-pixel;
+    color: var(--white);
+}
+
+.rightside form {
+    font-family: levi-windows;
 }

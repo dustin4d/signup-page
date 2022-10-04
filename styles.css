@@ -62,10 +62,27 @@ body{
     color: var(--white);
 }
 
+.rightside h1{
+    font-size: 1em;
+    font-weight: 100;
+    margin: 0;
+}
+
 .rightside form {
     font-family: levi-windows;
 }
 
 .rightside fieldset {
     border: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.rightside .field {
+    display: flex;
+    flex-flow: column wrap;
+    /* Give space after each input field, @ 50% and above, it forces a wrap
+       which ruins the entire layout, so I only use 40% */
+    width: 40%;
+    padding-right: 10px;
 }
